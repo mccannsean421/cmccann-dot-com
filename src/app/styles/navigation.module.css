@@ -1,0 +1,11 @@
+.nav {
+    display: grid;
+    padding: 1em;
+    position: absolute;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 1em;
+}
