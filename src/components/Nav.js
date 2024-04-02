@@ -1,7 +1,11 @@
-import Image from 'next/image'
-import Link from "next/link"
+"use client"
+import Image from 'next/image';
+import Link from "next/link";
+import { useState } from 'react';
 
 export default function Nav() {
+
+    const [mobileNavIsOpen, setMobileNavIsOpen] = useState(false);
 
     const navLinks = [
         {
@@ -33,9 +37,10 @@ export default function Nav() {
     return <nav className="p-6 grid grid-cols-2">
         {/* nav links */}
         <div>
-            <ul>
-                { navLinks.map((link, index) => <li className="inline-block pr-3" key={`nav-link-${index}`}><Link href={link.path}>{link.displayText}</Link></li>) }
+            <ul className={`absolute lg:relative lg:left-auto duration-200 top-32 lg:top-0 ${mobileNavIsOpen ? "left-0 " : "-left-64"}`}>
+                { navLinks.map((link, index) => <li className="lg:inline-block pr-3" key={`nav-link-${index}`}><Link href={link.path}>{link.displayText}</Link></li>) }
             </ul>
+            <button className="lg:hidden" onClick={() => setMobileNavIsOpen(!mobileNavIsOpen)}>Open</button>
         </div>
 
         {/* social links */}
