@@ -5,7 +5,7 @@ import '@testing-library/jest-dom';
 describe("Navigation Component", () => {
     it ("renders expected links", () => {
         render(<Nav />);
-        const expectedLinks = ["Home", "Work", "Hobbies"];
+        const expectedLinks = ["Home", "Work", "About"];
 
         expectedLinks.forEach((link) => {
             expect(screen.getByText(link)).toBeInTheDocument();

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="h-screen">
     <main className="grid items-center h-full">
-      <div className="hero pl-24">
+      <div className="hero lg:pl-24">
         <h1 className="text-2xl">Hi, I&apos;m Cormac McCann</h1>
         <h2 className="py-6">Developer - Fantasy Nerd - Occasional Hiker</h2>
         <div>

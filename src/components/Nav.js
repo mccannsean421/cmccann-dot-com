@@ -17,6 +17,10 @@ export default function Nav() {
             path: "/work",
         },
         {
+            displayText: "About",
+            path: "/about",
+        },
+        {
             displayText: "Hobbies",
             path: "/hobbies"
         }
@@ -37,10 +41,10 @@ export default function Nav() {
     return <nav className="p-6 grid grid-cols-2">
         {/* nav links */}
         <div>
-            <ul className={`absolute lg:relative lg:left-auto duration-200 top-32 lg:top-0 ${mobileNavIsOpen ? "left-0 " : "-left-64"}`}>
-                { navLinks.map((link, index) => <li className="lg:inline-block pr-3" key={`nav-link-${index}`}><Link href={link.path}>{link.displayText}</Link></li>) }
+            <ul className={`absolute lg:relative lg:left-auto duration-200 top-32 lg:top-0 h-screen w-screen lg:h-auto lg:w-auto bg-white ${mobileNavIsOpen ? "left-0 " : "-left-[100%]"}`}>
+                { navLinks.map((link, index) => <li className="lg:inline-block pr-3 text-center" key={`nav-link-${index}`}><Link href={link.path} onClick={() => setMobileNavIsOpen(false)}>{link.displayText}</Link></li>) }
             </ul>
-            <button className="lg:hidden" onClick={() => setMobileNavIsOpen(!mobileNavIsOpen)}>Open</button>
+            <button className="lg:hidden" onClick={() => setMobileNavIsOpen(!mobileNavIsOpen)}><Image height={22} width={22} src="/hamburger.svg" alt="Hamburger Icon" /></button>
         </div>
 
         {/* social links */}
