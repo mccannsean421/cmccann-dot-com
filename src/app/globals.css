@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --rose: #F42272;
+}
+
 body {
   min-height: 100vh;
+  background: #020202;
+  color: #fff
+}
+
+nav {
+  height: 70px;
+}
+
+.nav-link:hover, .active-link {
+  color: var(--rose);
+}
+
+.content-container {
+  height: calc(100vh - 70px);
+}
+
+.hero-btn:hover {
+  color: var(--rose) !important;
+  border-color: var(--rose) !important;
 }
