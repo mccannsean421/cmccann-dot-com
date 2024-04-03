@@ -20,6 +20,10 @@ export default function Nav() {
         {
             displayText: "About",
             path: "/about",
+        },
+        {
+            displayText: "Contact",
+            path: "/contact",
         }
 
     ];

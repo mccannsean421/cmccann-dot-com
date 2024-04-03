@@ -16,7 +16,8 @@ nav {
   height: 70px;
 }
 
-.nav-link:hover, .active-link {
+a:hover, .active-link {
+  transition: .2s;
   color: var(--rose);
 }
 
@@ -27,4 +28,13 @@ nav {
 .hero-btn:hover {
   color: var(--rose) !important;
   border-color: var(--rose) !important;
+}
+
+.hero-image {
+  background-image: url("/laptop.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
