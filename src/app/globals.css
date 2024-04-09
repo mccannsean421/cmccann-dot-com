@@ -38,3 +38,16 @@ a:hover, .active-link {
   height: 100%;
   width: 100%;
 }
+
+.nav-link::after {
+  content: '';
+  height: 5px;
+  width: 0px;
+  background: var(--rose);
+  display: block;
+  transition: .2s;
+}
+
+.nav-link:hover::after {
+  width: 20px;
+}

@@ -1,5 +1,10 @@
 import ArticleTile from "@/components/ArticleTile"
 
+export const metadata = {
+    title: 'My Work | Cormac McCann',
+    description: '...',
+  }
+
 export default function Page() {
     const jobs = [{
             title: "Rent the Runway",
