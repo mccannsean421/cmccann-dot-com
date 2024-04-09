@@ -1,3 +1,5 @@
+import ContactForm from "@/components/ContactForm"
+
 export const metadata = {
     title: 'Contact me | Cormac McCann',
     description: '...',
@@ -14,11 +16,7 @@ export default function ContactPage() {
             </p>
 
             <h2 className="text-2xl uppercase pb-8 font-bold">If you just want to say hi</h2>
-            <p className="pb-8">
-                If I wasn&apos;t a developer I would have loved a job that would get me out in nature.
-                Any time I have a free morning and the weather is good enough I love to go for a hike 
-                or a long walk in any of the trails Ireland has to offer.
-            </p>
+            <ContactForm />
         </main>
     )
 }
