@@ -16,6 +16,7 @@ export default function ContactPage() {
             </p>
 
             <h2 className="text-2xl uppercase pb-8 font-bold">If you just want to say hi</h2>
+            <p>Drop me a line here:</p>
             <ContactForm />
         </main>
     )

@@ -51,3 +51,12 @@ a:hover, .active-link {
 .nav-link:hover::after {
   width: 20px;
 }
+
+.social-link > svg {
+  height: 48px;
+  width: 48px;
+}
+
+.social-link > svg > path {
+  stroke: white;
+}
