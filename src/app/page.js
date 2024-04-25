@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import BackgroundAnimation from "@/components/BackgroundAnimation";
 
 export default function Home() {
   return (
@@ -8,7 +7,6 @@ export default function Home() {
     <main className="h-full">
       <div className="hero grid items-center h-full">
       <div className="text-center">
-        <BackgroundAnimation />
         <h1 className="text-3xl lg:text-7xl font-bold uppercase italic">Cormac McCann</h1>
         {/* <div className="glitch-animation">Cormac McCann</div> */}
 

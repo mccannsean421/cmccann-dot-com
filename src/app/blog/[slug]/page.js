@@ -1,14 +1,18 @@
 import { getPostBySlug } from "@/app/lib";
-import navigation from "next/navigation";
+import MdxLayout from "@/app/mdx-layout";
 
-export default function BlogPostPage() {
-   
-    console.log(navigation);
-    const post = getPostBySlug()
+export async function getPageContent(slug) {
+    const post = await getPostBySlug(slug);
+    return post;
+}
+
+export default async function BlogPostPage({params}) {
+    const slug = params.slug;
+    const { content } = await getPageContent(slug);
     
     return <>
-        <h1>This is a blog post</h1>
-        <article className="prose">
-        </article>
+        <MdxLayout>
+            { content }
+        </MdxLayout>
     </>
  }
