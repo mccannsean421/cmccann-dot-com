@@ -18,7 +18,7 @@ nav {
 
 a:hover, .active-link {
   transition: .2s;
-  color: var(--rose);
+  color: white;
 }
 
 .content-container {
@@ -43,7 +43,7 @@ a:hover, .active-link {
   content: '';
   height: 5px;
   width: 0px;
-  background: var(--rose);
+  background: white;
   display: block;
   transition: .2s;
 }
@@ -53,10 +53,35 @@ a:hover, .active-link {
 }
 
 .social-link > svg {
-  height: 48px;
-  width: 48px;
+  height: 36px;
+  width: 36px;
 }
 
 .social-link > svg > path {
   stroke: white;
+}
+
+/* TEXT ANIMATION */
+.float-animation-container {
+  position: absolute;
+}
+
+.float-animation-container > svg{
+  animation: float 6s infinite ease-in-out;
+  opacity: .5;
+  transform: rotate(45deg);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

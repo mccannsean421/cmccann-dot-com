@@ -24,6 +24,10 @@ export default function Nav() {
         {
             displayText: "Contact",
             path: "/contact",
+        },
+        {
+            displayText: "Blog",
+            path: "/blog",
         }
 
     ];
@@ -67,7 +71,7 @@ export default function Nav() {
             <ul className={`absolute lg:relative lg:left-auto duration-200 top-32 lg:top-0 h-screen w-screen lg:h-auto lg:w-auto bg-black ${mobileNavIsOpen ? "left-0 " : "-left-[100%]"}`}>
                 { navLinks.map((link, index) => 
                 <li className="lg:inline-block pr-3 text-center" key={`nav-link-${index}`}>
-                    <Link href={link.path} onClick={() => setMobileNavIsOpen(false)} className={`uppercase nav-link font-bold duration-200 ${currentPath === link.path ? "active-link" : ""}`}>
+                    <Link href={link.path} onClick={() => setMobileNavIsOpen(false)} className={`uppercase nav-link font-bold duration-200 text-gray-400 hover:text-white ${currentPath === link.path ? "active-link" : ""}`}>
                         {link.displayText}
                     </Link>
                 </li>) }
