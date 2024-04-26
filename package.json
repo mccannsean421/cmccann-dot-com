@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "blog": "cp -fi ./app/posts/test-blog.mdx ./app/posts/new-blog.mdx" 
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",

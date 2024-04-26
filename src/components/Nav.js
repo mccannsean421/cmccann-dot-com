@@ -1,5 +1,4 @@
 "use client"
-import Image from 'next/image';
 import Link from "next/link";
 import { useState } from 'react';
 import { usePathname } from 'next/navigation'
@@ -20,10 +19,6 @@ export default function Nav() {
         {
             displayText: "About",
             path: "/about",
-        },
-        {
-            displayText: "Contact",
-            path: "/contact",
         },
         {
             displayText: "Blog",
