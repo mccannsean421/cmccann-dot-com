@@ -2,14 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --rose: #F42272;
-}
+/* TEST */
 
 body {
   min-height: 100vh;
+  background: #191e22;
 }
 
+h1 {
+  color: white !important;
+}
+
+.platform {
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, .5);
+
+  width: 1100px;
+}
+
+.content-block {
+  background: #15181d
+}
+
+
+/* END TEST */
 nav {
   height: 70px;
 }
@@ -19,27 +34,14 @@ nav > a:hover, .active-link {
   color: white;
 }
 
-.content-container {
-  height: calc(100vh - 70px);
-}
-
 .hero-btn:hover {
-  color: var(--rose) !important;
-  border-color: var(--rose) !important;
-}
-
-.hero-image {
-  background-image: url("/laptop.jpg");
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+  color: white !important;
+  border-color: white important;
 }
 
 .nav-link::after {
   content: '';
-  height: 5px;
+  height: 1px;
   width: 0px;
   background: white;
   display: block;
