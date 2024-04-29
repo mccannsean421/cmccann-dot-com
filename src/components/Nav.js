@@ -29,10 +29,10 @@ export default function Nav() {
     ];
 
     
-    return <nav className="p-6 grid grid-cols-2">
+    return <nav className="p-6 grid grid-cols-2 bg-black">
         {/* nav links */}
         <div>
-            <ul className={`absolute lg:relative lg:left-auto duration-200 top-32 lg:top-0 h-screen w-screen lg:h-auto lg:w-auto bg-black ${mobileNavIsOpen ? "left-0 " : "-left-[100%]"}`}>
+            <ul className={`absolute lg:relative lg:left-auto duration-200 top-32 lg:top-0 h-screen w-screen lg:h-auto lg:w-auto ${mobileNavIsOpen ? "left-0 " : "-left-[100%]"}`}>
                 { navLinks.map((link, index) => 
                 <li className="lg:inline-block pr-3 text-center" key={`nav-link-${index}`}>
                     <Link href={link.path} onClick={() => setMobileNavIsOpen(false)} className={`uppercase nav-link font-bold duration-200 text-gray-400 hover:text-white ${currentPath === link.path ? "active-link" : ""}`}>
@@ -60,7 +60,7 @@ export default function Nav() {
 
         {/* social links */}
         <div className="grid justify-end">
-                <SocialLinks />
+            <SocialLinks />
         </div>
     </nav>
 }

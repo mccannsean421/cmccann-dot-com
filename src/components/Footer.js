@@ -2,7 +2,7 @@ import { SocialLinks } from "./SocialLinks"
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className="bg-black">
             <div className="pt-12 pb-6 mx-auto max-w-4xl text-center">
                 <p className="text-gray-400">All rights reserved &copy; 2024 Cormac McCann</p>
             </div>

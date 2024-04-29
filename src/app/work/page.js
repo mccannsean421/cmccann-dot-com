@@ -1,4 +1,5 @@
-import ArticleTile from "@/components/ArticleTile"
+import JobTile from "@/components/JobTile"
+import { PageHeader } from "@/components/PageHeader";
 
 export const metadata = {
     title: 'My Work | Cormac McCann',
@@ -16,7 +17,7 @@ export default function Page() {
             title: "Shipyard Technology Ventures",
             subtitle: "Frontend Engineer",
             href: "https://www.shipyardtech.com/",
-            description: "I worked primarily as a frontend engineer while at Shipyard, working primarily with Vue JS"
+            description: "I worked primarily as a frontend engineer while at Shipyard. The focus of our team was delivering hi-quality proof of concept applications using mainly Vue JS. There was a wide variety of projects to work on."
         },
         {
             title: "Bookies.com",
@@ -34,7 +35,7 @@ export default function Page() {
 
     const jobTiles = () => jobs.map((job, index) => 
         <li key={`job-tile-${index}`}>
-        <ArticleTile 
+        <JobTile 
             title={job.title} subtitle={job.subtitle}
             href={job.href}
             description={job.description}
@@ -42,8 +43,8 @@ export default function Page() {
     
     return (
         <main className="grid items-center h-full p-12 max-w-4xl my-0 mx-auto">
-            <h1 className="text-4xl uppercase pb-24">My Work</h1>
-
+            <PageHeader title="My Work" />
+            <p data-testid="blurb" className="py-12 text-xl text-gray-600"> I&apos;ve been working in development since 2015 and since then I&apos;ve on some amazing teams for some well known brands.</p>
             <ul>
                 {jobTiles()}
             </ul>   

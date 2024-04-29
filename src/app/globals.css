@@ -8,15 +8,13 @@
 
 body {
   min-height: 100vh;
-  background: #020202;
-  color: #fff
 }
 
 nav {
   height: 70px;
 }
 
-a:hover, .active-link {
+nav > a:hover, .active-link {
   transition: .2s;
   color: white;
 }
@@ -61,27 +59,3 @@ a:hover, .active-link {
   stroke: white;
 }
 
-/* TEXT ANIMATION */
-.float-animation-container {
-  position: absolute;
-}
-
-.float-animation-container > svg{
-  animation: float 6s infinite ease-in-out;
-  opacity: .5;
-  transform: rotate(45deg);
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(5%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
