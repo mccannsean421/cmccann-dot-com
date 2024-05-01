@@ -8,12 +8,14 @@ export default function Home() {
 
   return (
     <div className="content-container">
+      <div className="aura--blue" />
+      <div className="aura--nova" />
     <main>
       <div className="hero grid justify-items-center">
 
       <div className="platform p-12 mt-24 max-w-4xl w-full">
         <h1 className={`text-xl lg:text-xl font-bold text-gray-400`}>Hi, I&apos;m Cormac McCann</h1>
-        <h2 className="py-6 text-9xl text-white font-bold uppercase max-w-96">I build great websites</h2>
+        <h2 className="py-6 text-9xl text-white font-bold uppercase max-w-96 -skew-x-3">I build great websites</h2>
         <div>
           <p className="text-lg text-gray-200 pl-48">I create fast, well designed web applications</p>
         </div>
