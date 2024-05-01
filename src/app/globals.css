@@ -6,7 +6,8 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to top right,#191e22, #15191d);
+  background: linear-gradient(to top right, #4b235b, #481f64);
+  
 }
 
 .photo-background {
@@ -19,7 +20,7 @@ body {
 }
 
 .content-block {
-  background: #15181d
+  background: rgba(0,0,0,0.1)
 }
 
 
