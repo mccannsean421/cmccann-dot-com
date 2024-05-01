@@ -29,7 +29,7 @@ export default function Nav() {
     ];
 
     
-    return <nav className="p-6 grid grid-cols-2">
+    return <nav className="p-6 grid grid-cols-2 relative z-10">
         {/* nav links */}
         <div>
             <ul className={`absolute lg:relative lg:left-auto duration-200 top-32 lg:top-0 h-screen w-screen lg:h-auto lg:w-auto ${mobileNavIsOpen ? "left-0 " : "-left-[100%]"}`}>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PT_Serif, Noto_Serif } from "next/font/google";
+import ContactForm from "@/components/ContactForm";
 
 const ptSerif = Noto_Serif({ subsets: ["latin"], weight: ["700"] });
 
@@ -8,8 +9,6 @@ export default function Home() {
 
   return (
     <div className="content-container">
-      <div className="aura--blue" />
-      <div className="aura--nova" />
     <main>
       <div className="hero grid justify-items-center">
 
@@ -59,7 +58,11 @@ export default function Home() {
       </div>
 
       <div className="p-24">
-        <h2 className="text-3xl uppercase font-bold capitalize text-white pb-24 w-full text-center ">Want to Connect?</h2>
+        <h2 className="text-3xl uppercase font-bold capitalize text-white w-full text-center ">Want to Connect?</h2>
+      </div>
+
+      <div className="rounded max-w-[770px] px-24 py-12 bg-[rgba(0,0,0,0.5)] ">
+        <ContactForm />
       </div>
 
       </div>

@@ -16,6 +16,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`antialiased ${robotoCondensed.className}`}>
         <Nav/>
+        <div className="aura aura--blue" />
+        <div className="aura aura--nova" />
         <div>
         {children}
         </div>
