@@ -1,14 +1,18 @@
 // import Link from "next/link";
 import getAllPosts from "../lib";
 import ArticleTile from "@/components/ArticleTile";
+import { PageHeader } from "@/components/PageHeader";
 
 export default async function BlogPage() {
     const posts = await getAllPosts();
-    console.log(posts);
+
     return (
         <>
-            <div className="container mx-auto max-w-4xl">
-            <h1 className="text-2xl lg:text-4xl pb-6 uppercase font-bold">My Chaotic Blog</h1>
+            <div className="container mx-auto max-w-4xl py-12">
+            <PageHeader title="My Chaotic Blog" />
+            <div className="pt-24">
+            
+            <div className="py-12 px-24 bg-[rgba(0,0,0,0.5)]">
             <ul>
                 {posts.map(post => (
                     <li key={post.slug} className="text-white">
@@ -21,6 +25,8 @@ export default async function BlogPage() {
                     </li>
                 ))}
             </ul>
+            </div>
+            </div>
             </div>
         </>
     );

@@ -7,14 +7,23 @@ export async function getPageContent(slug) {
     return post;
 }
 
+export const metadata = {
+    title: 'My Work | Cormac McCann',
+    description: '...',
+  }
+
+
 export default async function BlogPostPage({params}) {
     const slug = params.slug;
     const { content, meta } = await getPageContent(slug);
     
     return <>
-        <ArticleHeader meta={meta} />
+        
         <MdxLayout>
+        <ArticleHeader meta={meta} />
+            <div className="bg-white">
             { content }
+            </div>
         </MdxLayout>
     </>
  }

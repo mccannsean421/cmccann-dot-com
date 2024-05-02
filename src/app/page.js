@@ -16,7 +16,7 @@ export default function Home() {
         <h1 className={`text-xl lg:text-xl font-bold text-gray-400`}>Hi, I&apos;m Cormac McCann</h1>
         <h2 className="py-6 text-9xl text-white font-bold uppercase max-w-96 -skew-x-3">I build great websites</h2>
         <div>
-          <p className="text-lg text-gray-200 pl-48">I create fast, well designed web applications</p>
+          <p className="text-lg text-gray-200 pl-48">and other things too</p>
         </div>
       </div>
     

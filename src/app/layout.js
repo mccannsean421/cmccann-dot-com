@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <Nav/>
         <div className="aura aura--blue" />
         <div className="aura aura--nova" />
-        <div>
+        <div className="relative z-10">
         {children}
         </div>
         <Footer />

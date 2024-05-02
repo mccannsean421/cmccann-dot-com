@@ -1,3 +1,3 @@
 export function PageHeader({title}) {
-    return <h1 className="text-5xl uppercase font-bold capitalize">{title}</h1>
+    return <h1 className=" text-7xl text-white font-bold uppercase max-w-96 -skew-x-3">{title}</h1>
 }
