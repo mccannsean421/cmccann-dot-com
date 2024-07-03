@@ -1,4 +1,3 @@
-import { SocialLinks } from "./SocialLinks"
 
 export default function Footer() {
     return (
@@ -7,7 +6,6 @@ export default function Footer() {
                 <p className="text-gray-400">All rights reserved &copy; 2024 Cormac McCann</p>
             </div>
             <div className="grid justify-items-center pb-12">
-            <SocialLinks />
             </div>
         </footer>
     )

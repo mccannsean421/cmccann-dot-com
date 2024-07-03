@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useState } from 'react';
 import { usePathname } from 'next/navigation'
-import { SocialLinks } from "./SocialLinks";
 
 export default function Nav() {
     const currentPath = usePathname();
@@ -28,7 +27,7 @@ export default function Nav() {
     return <nav className="p-6 grid grid-cols-2 relative z-10">
         {/* nav links */}
         <div>
-            <ul className={`absolute lg:relative lg:left-auto duration-200 top-32 lg:top-0 h-screen w-screen lg:h-auto lg:w-auto ${mobileNavIsOpen ? "left-0 " : "-left-[100%]"} nav-list`}>
+            <ul className={`absolute lg:relative lg:left-auto duration-200 top-24 lg:top-0 h-screen w-screen lg:h-auto lg:w-auto ${mobileNavIsOpen ? "left-0 " : "-left-[100%]"} nav-list`}>
                 { navLinks.map((link, index) => 
                 <li className="lg:inline-block pr-3 text-center" key={`nav-link-${index}`}>
                     <Link href={link.path} onClick={() => setMobileNavIsOpen(false)} className={`uppercase nav-link font-bold duration-200 text-gray-400 hover:text-white ${currentPath === link.path ? "active-link" : ""}`}>
@@ -55,8 +54,14 @@ export default function Nav() {
         </div>
 
         {/* social links */}
-        <div className="grid justify-end">
-            <SocialLinks />
+        <div className="inline-flex justify-end">
+            <a href="https://www.linkedin.com/in/cormac-mccann-70052283/" rel="nofollow" target="_blank"className={`uppercase nav-link font-bold duration-200 text-gray-400 hover:text-white`}>
+              LinkedIn
+            </a>
+            <span className="px-6 uppercase font-bold text-gray-400">|</span>
+            <a href="https://www.linkedin.com/in/cormac-mccann-70052283/" rel="nofollow" target="_blank"className={`uppercase nav-link font-bold duration-200 text-gray-400 hover:text-white`}>
+              Github
+            </a>
         </div>
     </nav>
 }

@@ -1,19 +1,8 @@
 export default function ContactForm() {
     return <>
-    {/* <form name="contact" netlify>
-        <p>
-            <label>Name <input type="text" name="name" /></label>
-        </p>
-        <p>
-            <label>Email <input type="email" name="email" /></label>
-        </p>
-        <p>
-            <button type="submit">Send</button>
-        </p>
-    </form> */}
 
 <div className="flex items-center justify-center p-12">
-  <div className="mx-auto max-w-4xl w-[500px]">
+  <div className="mx-auto md:max-w-4xl md:w-[500px]">
     <form action="https://formbold.com/s/FORM_ID" method="POST">
       <div className="mb-5">
         <label
