@@ -1,29 +1,32 @@
 import { getPostBySlug } from "@/app/lib";
 import MdxLayout from "@/app/mdx-layout";
 import { ArticleHeader } from "@/components/ArticleHeader";
+import Head from "next/head";
 
 export async function getPageContent(slug) {
-    const post = await getPostBySlug(slug);
-    return post;
+  const post = await getPostBySlug(slug);
+  return post;
 }
 
-export const metadata = {
-    title: 'My Work | Cormac McCann',
-    description: '...',
-  }
+export default async function BlogPostPage({ params }) {
+  const slug = params.slug;
+  const { content, meta } = await getPageContent(slug);
 
+  const dynamicMetadata = {
+    title: meta.title || "My Work | Cormac McCann",
+    description: meta.description || "...",
+  };
 
-export default async function BlogPostPage({params}) {
-    const slug = params.slug;
-    const { content, meta } = await getPageContent(slug);
-    
-    return <>
-        
-        <MdxLayout>
+  return (
+    <>
+      <Head>
+        <title>{dynamicMetadata.title}</title>
+        <meta name="description" content={dynamicMetadata.description} />
+      </Head>
+      <MdxLayout>
         <ArticleHeader meta={meta} />
-            <div className="bg-white">
-            { content }
-            </div>
-        </MdxLayout>
+        <div>{content}</div>
+      </MdxLayout>
     </>
- }
+  );
+}
