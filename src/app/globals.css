@@ -76,10 +76,6 @@ nav {
   height: 70px;
 }
 
-.nav-list {
-  background: #08031d
-}
-
 nav > a:hover, .active-link {
   transition: .2s;
   color: white;

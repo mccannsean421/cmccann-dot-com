@@ -27,7 +27,7 @@ export default function Nav() {
       {/* nav links */}
       <div>
         <ul
-          className={`absolute lg:relative lg:left-auto duration-200 top-24 lg:top-0 h-screen w-screen lg:h-auto lg:w-auto ${
+          className={`absolute md:relative top-[80px] md:relative lg:left-auto duration-200 lg:top-0 h-screen w-screen lg:h-auto lg:w-auto bg-[#08031d] md:bg-transparent ${
             mobileNavIsOpen ? "left-0 " : "-left-[100%]"
           } nav-list`}
         >
@@ -39,7 +39,7 @@ export default function Nav() {
               <Link
                 href={link.path}
                 onClick={() => setMobileNavIsOpen(false)}
-                className={`uppercase nav-link font-bold duration-200 text-gray-400 hover:text-white ${
+                className={`uppercase nav-link font-bold duration-200 text-gray-400 hover:text-white text-2xl md:text-xl pb-6 ${
                   currentPath === link.path ? "active-link" : ""
                 }`}
               >

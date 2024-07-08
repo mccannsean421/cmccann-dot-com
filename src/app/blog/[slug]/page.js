@@ -13,7 +13,7 @@ export default async function BlogPostPage({ params }) {
   const { content, meta } = await getPageContent(slug);
 
   const dynamicMetadata = {
-    title: meta.title || "My Work | Cormac McCann",
+    title: meta.title || "Blog | Cormac McCann",
     description: meta.description || "...",
   };
 
