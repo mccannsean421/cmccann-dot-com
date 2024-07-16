@@ -9,43 +9,51 @@ publishDate: 03/07/2024
 ## Introduction
 
 A few years back I was approached by my former employer and asked if I wanted to participate in a project where we would 
-update an old PHP website. The website in question was a well established domain with a high volume of traffic.
-Because of this high traffic, the strategy decided upon by management was to take small sections of the site, 
-update them with the new stack and then slowly roll the pages out to users. 
+update an old PHP affiliate marketing website. The website in question was a well established domain with a high volume of traffic.
+It performed well in terms of conversion but it's age was definitely starting to show, in terms of aesthetics and performance. 
 
-## 1. You can't fix everything
+At the time of this update I was a starry eyed junior engineer, and saw this as a golden opportunity to drag this old sack of shi... 
+shippable code int the 21st century. I was eager to overhaul everything and fix every single issue I had with the code base.
+However, as most junior devs quickly learn, that was never going to happen.
 
-At the time of this update I was a starry eyed junior engineer that thought I would be able to fix every single problem
-this website had. It would be using the newest tech, have perfect Lighthouse scores and all the nassty old code would be deleted forever.
-Unfortunately this was far from the truth.
+
+
+## 1. You won't have time to fix everything
+
+The harsh reality is that 9 times out of 10 the stakeholders are looking for as quick of a turnaround as they can get.
+I've worked on many legacy websites and rarely would the opportunity arise for a complete rebuild. 
+I would have loved nothing more than to rebuild this Symphony 2 website from the ground up in something 
+like Vue JS and Tailwind CSS. But unfortunately time and resources are always a factor and you're going to have to 
+make some sacrifices. Ideally eleminating as much tech debt as you can with the time you have.
 
 ## 2. Don't be afraid to ask the stupid questions
 
-When you're dealing with a legacy system, there's a good chance that the original developers are no longer around 
-to explain why certain decisions were made. This can leave you in the dark, trying to figure out how things work 
-and why they were done a certain way.
+When dealing with a legacy site there's a good chance that the original devs are no longer around 
+to explain why certain decisions were made. If you're lucky there is well commented, well structured 
+code to work with, if you're extremely lucky there are even Architectural Decision Records (ADRs)
+for why these decisions were made. But I'm willing to bet that this isn't the case for a lot of organisitions.
+This can leave you up ship creek without a paddle, trying to figure out why things were done a certain way, 
+and if certain logic is still necessary.
 
-Asking questions, even ones that might seem basic or obvious, is crucial. It helps uncover the rationale behind 
-existing implementations and can reveal potential pitfalls in your modernization efforts. Don’t let fear of looking 
-inexperienced prevent you from gaining the clarity needed to move forward. Often, 
-these questions can lead to a deeper understanding and uncover issues that might not have been apparent at first glance.
+This is why asking questions, even ones that might seem stupid, is critical. 
+It helps uncover the reasons behind old decisions and can shed light on potential "gotchas". Don’t be 
+afraid of coming across as inexperienced, this will save on potentialback tracking later down the line. 
+And often, from what I have seen over the years, it is the most experienced engineers asking these questions.
 
-## 3. Know when to push back and challenge decisions 
+## 3. Know when to push back and challenge decisions
 
-While it's important to be a team player, there are times when you need to push back against decisions that might not 
-be in the best interest of the project. This could involve advocating for better testing practices, arguing against 
-cutting corners that could lead to technical debt, or simply questioning the feasibility of certain features given 
-the current system's limitations.
+It's important to be a productive member of your team, you want to get on with your team, sadly there are 
+times when you need to push back against decisions that you don't agree with.
+ It could be someone suggests forgoing unit tests in an attempt to save dev time, arguing against 
+cutting corners that could lead to other types of tech-debt, or questioning the flow of provided design mock-ups.
 
-Pushing back is not about being confrontational but about ensuring that the project stays on track and that the 
-solutions implemented are sustainable in the long term. This means having the courage to voice concerns and 
-provide well-reasoned arguments for alternative approaches. It’s about finding a balance between meeting 
-immediate business needs and laying a solid foundation for future development.
+Pushing back is not meant to be confrontational but ensuring you and your team have healthy discussion
+and set yourselves up for success. This means knowing when to speak up and 
+provide well-reasoned arguments for why a certain approach may not be the best decision.
 
-## Conclusion
-
-Modernizing an old website is a challenging but rewarding task. It requires a blend of technical skills, 
-critical thinking, and effective communication. You won't be able to fix everything, and that's okay.
- Focus on making meaningful improvements, don't hesitate to ask questions, and stand your ground when necessary. 
- These experiences will not only help you grow as a developer but also contribute to creating a better, 
- more maintainable system for the future.
+## Conclusion*
+Updating old websites is not an easy thing to do, but when you take a step back and think 
+about your approach it can be a very fulfilling project. It will help you hone your technical 
+skills as a developer and in some cases as a colleague. You won't be able to fix everything, 
+and that's just how it goes.Focus on the improvements that deliver the most value, ask questions, 
+and push back when necessary. 
