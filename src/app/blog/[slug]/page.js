@@ -8,21 +8,20 @@ export async function getPageContent(slug) {
   return post;
 }
 
+export async function generateMetadata({params}) {
+  const { meta } = await getPageContent(params.slug);
+
+  return {
+    title: meta.title,
+  }
+}
+
 export default async function BlogPostPage({ params }) {
   const slug = params.slug;
   const { content, meta } = await getPageContent(slug);
 
-  const dynamicMetadata = {
-    title: meta.title || "Blog | Cormac McCann",
-    description: meta.description || "...",
-  };
-
   return (
     <>
-      <Head>
-        <title>{dynamicMetadata.title}</title>
-        <meta name="description" content={dynamicMetadata.description} />
-      </Head>
       <MdxLayout>
         <ArticleHeader meta={meta} />
         <div>{content}</div>

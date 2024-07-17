@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/PageHeader";
 
 export const metadata = {
     title: 'My Work | Cormac McCann',
-    description: '...',
+    description: 'A brief summary of just some of the web development roles I have had over the years',
   }
 
 export default function Page() {
