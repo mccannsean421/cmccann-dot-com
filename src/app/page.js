@@ -13,7 +13,7 @@ export default function Home() {
       <div className="hero grid justify-items-center">
 
         <div className="platform p-12 my-36 max-w-4xl w-full text-center">
-          <h1 className={`text-5xl lg:text-8xl font-bold text-white pb-6 -skew-x-3`}>Cool Things</h1>
+          <h1 className={`text-5xl lg:text-8xl font-bold text-white pb-6 -skew-x-3`}>Cormac McCann</h1>
           <h2 className="py-6 text-3xl lg:text-5xl text-gray-300 -skew-x-3">
             I build cool things on the web
           </h2>
