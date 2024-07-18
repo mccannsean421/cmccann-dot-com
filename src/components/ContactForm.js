@@ -3,7 +3,7 @@ export default function ContactForm() {
 
 <div className="flex items-center justify-center p-12">
   <div className="mx-auto md:max-w-4xl md:w-[500px]">
-    <form action="https://formbold.com/s/FORM_ID" method="POST">
+    <form name="Contact" method="POST" data-netlify="true">
       <div className="mb-5">
         <label
           for="name"
@@ -67,6 +67,7 @@ export default function ContactForm() {
       <div>
         <button
           className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
+          type="submit"
         >
           Submit
         </button>
