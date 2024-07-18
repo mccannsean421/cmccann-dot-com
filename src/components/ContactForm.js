@@ -3,7 +3,7 @@ export default function ContactForm() {
 
 <div className="flex items-center justify-center p-12">
   <div className="mx-auto md:max-w-4xl md:w-[500px]">
-    <form name="Contact" method="POST" netlify>
+    <form name="Contact" method="POST" data-netlify="true">
       <div className="mb-5">
         <label
           for="name"
