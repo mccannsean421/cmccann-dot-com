@@ -3,30 +3,10 @@ export default function ContactForm() {
 
 <div className="flex items-center justify-center p-12">
   <div className="mx-auto md:max-w-4xl md:w-[500px]">
-  <form name="contact" method="POST" action="/success" data-netlify="true" >
-      <input type="hidden" name="form-name" value="contact" />
-      <p>
-<input type="text" name="firstname" id="firstname" />
-        <label htmlFor="yourname">
-          Your Name:
-        </label> <br />
-        <input type="text" name="name" id="yourname" />
-      </p>
-      <p>
-        <label htmlFor="youremail">
-          Your Email:
-        </label> <br />
-        <input type="email" name="email" id="youremail" />
-      </p>
-      <p>
-        <label htmlFor="yourmessage">
-          Message:
-        </label> <br />
-        <textarea name="message" id="yourmessage"></textarea>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
+  <form name="contact-form" netlify hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
     </form>
     {/* <form name="Contact" method="POST" data-netlify="true">
       <div className="mb-5">
