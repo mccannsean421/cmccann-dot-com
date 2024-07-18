@@ -1,34 +1,8 @@
 export default function ContactForm() {
     return <>
-    <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <p>
-        <label>
-          Name: <input type="text" name="name" />
-        </label>
-      </p>
-      <p>
-        <label>
-          Email: <input type="email" name="email" />
-        </label>
-      </p>
-      <p>
-        <label>
-          Message: <textarea name="message"></textarea>
-        </label>
-      </p>
-      <p>
-        <button className="button bg-red"  type="submit">Send</button>
-      </p>
-    </form>
-{/* <div className="flex items-center justify-center p-12">
-  <div className="mx-auto md:max-w-4xl md:w-[500px]"> */}
-    {/* <form name="Contact" method="POST" data-netlify="true">
+<div className="flex items-center justify-center p-12">
+  <div className="mx-auto md:max-w-4xl md:w-[500px]">
+    <form name="contact" method="POST" data-netlify="true" action="/success">
       <div className="mb-5">
         <label
           for="name"
@@ -97,8 +71,8 @@ export default function ContactForm() {
           Submit
         </button>
       </div>
-    </form> */}
-  {/* </div>
-</div> */}
+    </form>
+  </div>
+</div>
     </>
 }
