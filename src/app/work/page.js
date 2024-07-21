@@ -52,14 +52,14 @@ export default function Page() {
     ));
 
   return (
-    <main className="grid items-center h-full p-12 max-w-4xl my-0 mx-auto">
+    <main className="grid items-center h-full p-6 md:p-12 md:max-w-4xl my-0 mx-auto">
       <PageHeader title="My Work" />
       <p data-testid="blurb" className="py-12 text-xl text-gray-200">
         {" "}
         I&apos;ve been working in development since 2015 and since then
         I&apos;ve on some amazing teams for some well known brands.
       </p>
-      <div className="bg-[rgba(0,0,0,0.5)] p-24">
+      <div className="bg-[rgba(0,0,0,0.5)] p-6 md:p-24">
         <ul>{jobTiles()}</ul>
       </div>
     </main>

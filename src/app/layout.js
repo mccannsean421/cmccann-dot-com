@@ -18,7 +18,9 @@ export default function RootLayout({ children }) {
         <Nav />
         <div className="hidden md:block aura aura--blue" />
         <div className="hidden md:block aura aura--nova" />
-        <div className="relative z-9">{children}</div>
+        <div className="relative z-9 absolute top-[70px] md:top-0">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

@@ -10,9 +10,9 @@ export default function Home() {
     <div className="content-container">
       <main>
         <div className="hero grid justify-items-center">
-          <div className="platform p-12 my-36 max-w-4xl w-full text-center">
+          <div className="platform p-12 my-24 md:my-36 max-w-4xl w-full text-center">
             <h1
-              className={`text-5xl lg:text-8xl font-bold text-white pb-6 -skew-x-3`}
+              className={`text-6xl lg:text-8xl font-bold text-white pb-6 -skew-x-3`}
             >
               Cormac McCann
             </h1>

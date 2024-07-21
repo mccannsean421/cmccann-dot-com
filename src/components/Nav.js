@@ -23,12 +23,12 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="p-6 grid grid-cols-2 relative z-10">
+    <nav className="p-6 grid grid-cols-2 fixed md:relative z-10">
       {/* nav links */}
       <div>
         <ul
-          className={`absolute md:relative top-[80px] md:relative lg:left-auto duration-200 lg:top-0 h-screen w-screen lg:h-auto lg:w-auto bg-[#08031d] md:bg-transparent ${
-            mobileNavIsOpen ? "left-0 " : "-left-[100%]"
+          className={`fixed md:relative top-[70px] lg:left-auto duration-200 lg:top-0 h-screen w-screen lg:h-auto lg:w-auto bg-[#08031d] md:bg-transparent ${
+            mobileNavIsOpen ? "left-0 fixed" : "-left-[100%]"
           } nav-list`}
         >
           {navLinks.map((link, index) => (
@@ -77,7 +77,7 @@ export default function Nav() {
               height="36"
               viewBox="0 0 24 24"
               stroke-width="1.5"
-              stroke="#2c3e50"
+              stroke="#fff"
               fill="none"
               stroke-linecap="round"
               stroke-linejoin="round"

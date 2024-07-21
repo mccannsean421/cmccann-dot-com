@@ -9,7 +9,7 @@ export default function ArticleTile({ title, href, subtitle, description }) {
         </h3>
       </a>
       <h4 className="text-xl">{subtitle}</h4>
-      <p className="text-white py-6 text-3xl">{description}</p>
+      <p className="text-white py-6 text-xl md:text-3xl">{description}</p>
       <hr />
     </div>
   );

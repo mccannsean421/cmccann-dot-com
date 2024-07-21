@@ -4,9 +4,13 @@
 
 /* TEST */
 
+:root {
+  --background: #08031d;
+}
+
 body {
   min-height: 100vh;
-  background: #08031d;
+  background: var(--background);
   overflow-x: hidden;
 }
 
@@ -80,6 +84,7 @@ body {
 /* END TEST */
 nav {
   height: 70px;
+  background: var(--background);
 }
 
 nav > a:hover,

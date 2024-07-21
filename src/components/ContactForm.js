@@ -1,6 +1,6 @@
 export default function ContactForm() {
   return (
-    <div className="flex items-center justify-center p-12">
+    <div className="flex items-center justify-center py-6 md:p-12">
       <div className="mx-auto md:max-w-4xl md:w-[500px]">
         <form name="contact" method="POST" data-netlify="true">
           <div className="mb-5">

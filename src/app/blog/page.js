@@ -17,7 +17,7 @@ export default async function BlogPage() {
       <div className="container mx-auto max-w-4xl py-12">
         <PageHeader title="My Chaotic Blog" />
         <div className="pt-24">
-          <div className="py-12 px-24 bg-[rgba(0,0,0,0.5)]">
+          <div className="py-12 px-6 md:px-24 bg-[rgba(0,0,0,0.5)]">
             <ul>
               {posts.map((post) => (
                 <li key={post.slug} className="text-white">

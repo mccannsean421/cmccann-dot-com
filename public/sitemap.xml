@@ -2,11 +2,19 @@
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <url>
        <loc>http://www.coramcmccann.com/</loc>
-       <lastmod>2024-05-01</lastmod>
+       <lastmod>2024-07-21</lastmod>
      </url>
       <url>
        <loc>http://www.coramcmccann.com/work</loc>
-       <lastmod>2024-05-01</lastmod>
+       <lastmod>2024-07-21</lastmod>
+     </url>
+     <url>
+       <loc>http://www.coramcmccann.com/blog</loc>
+       <lastmod>2024-07-21</lastmod>
+     </url>
+          <url>
+       <loc>http://www.coramcmccann.com/blog/3-tips-for-working-on-legacy-codebases</loc>
+       <lastmod>2024-07-21</lastmod>
      </url>
    </urlset>
    </xml>
