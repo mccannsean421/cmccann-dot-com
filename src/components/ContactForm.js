@@ -1,11 +1,9 @@
-"use client"
-
 export default function ContactForm() {
     
     return <>
 <div className="flex items-center justify-center p-12">
   <div className="mx-auto md:max-w-4xl md:w-[500px]">
-    <form name="contact" method="POST" data-netlify="true" action="/success">
+    <form name="contact" method="POST" data-netlify="true">
       <div className="mb-5">
         <label
           for="name"
@@ -15,7 +13,7 @@ export default function ContactForm() {
         </label>
         <input
           type="text"
-          name="name"
+          name="fullname"
           id="name"
           placeholder="Full Name"
           className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
