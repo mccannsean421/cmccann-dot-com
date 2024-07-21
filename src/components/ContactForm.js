@@ -1,4 +1,7 @@
+"use client"
+
 export default function ContactForm() {
+    
     return <>
 <div className="flex items-center justify-center p-12">
   <div className="mx-auto md:max-w-4xl md:w-[500px]">
