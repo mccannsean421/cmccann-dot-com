@@ -1,10 +1,10 @@
-import { Inter, Roboto_Condensed, Noto_Serif} from "next/font/google";
+import { Inter, Roboto_Condensed, Noto_Serif } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 const robotoCondensed = Roboto_Condensed({ subsets: ["latin"] });
-const notoSerif = Noto_Serif({subsets: ["latin"], weight: ['400']})
+const notoSerif = Noto_Serif({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
   title: "Cormac McCann | Developer",
@@ -15,12 +15,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`antialiased ${robotoCondensed.className}`}>
-        <Nav/>
+        <Nav />
         <div className="hidden md:block aura aura--blue" />
         <div className="hidden md:block aura aura--nova" />
-        <div className="relative z-9">
-        {children}
-        </div>
+        <div className="relative z-9">{children}</div>
         <Footer />
       </body>
     </html>

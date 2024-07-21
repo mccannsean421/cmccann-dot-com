@@ -8,12 +8,12 @@ export async function getPageContent(slug) {
   return post;
 }
 
-export async function generateMetadata({params}) {
+export async function generateMetadata({ params }) {
   const { meta } = await getPageContent(params.slug);
 
   return {
     title: meta.title,
-  }
+  };
 }
 
 export default async function BlogPostPage({ params }) {

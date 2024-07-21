@@ -4,10 +4,10 @@ import ArticleTile from "@/components/ArticleTile";
 import { PageHeader } from "@/components/PageHeader";
 
 export const metadata = {
-  title: 'Web Development Blog | Cormac McCann',
-  description: 'My web development blog. Frontend, backend, fullstack there is something here for everyone',
-}
-
+  title: "Web Development Blog | Cormac McCann",
+  description:
+    "My web development blog. Frontend, backend, fullstack there is something here for everyone",
+};
 
 export default async function BlogPage() {
   const posts = await getAllPosts();

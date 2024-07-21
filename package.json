@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "blog": "cp -fi ./app/posts/test-blog.mdx ./app/posts/new-blog.mdx" 
+    "blog": "cp -fi ./app/posts/test-blog.mdx ./app/posts/new-blog.mdx"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",
@@ -31,6 +31,7 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8",
+    "prettier": "3.3.3",
     "tailwindcss": "^3.3.0"
   }
 }
